@@ -40,7 +40,7 @@ function SearchInput(e) {
     });
 }
 function buildListMarkup(countryes, template) {
-  const markup = countryes.map(count => template(count)).join();
+  const markup = countryes.map(count => template(count)).join('');
   refs.articlesContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
